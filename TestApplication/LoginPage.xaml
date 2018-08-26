@@ -4,6 +4,7 @@
         <!-- Place new controls here -->
         <Label Text="CMS Vendor App" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" 
                FontSize="Large"/>
+        <!--hello-->
        
         <Grid>
             <Grid.ColumnDefinitions>
