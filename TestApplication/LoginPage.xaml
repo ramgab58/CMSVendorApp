@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:TestApplication" x:Class="TestApplication.LoginPage">
+    <StackLayout Margin="20, 20, 20, 70">
+        <!-- Place new controls here -->
+        <Label Text="CMS Vendor App" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" 
+               FontSize="Large"/>
+       
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition>
+                    Test
+                </ColumnDefinition>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        
+        <Entry Placeholder="Enter your User ID"
+                x:Name="UserIdText" />
+        <Entry Placeholder="Enter your Password"
+               IsPassword="true"
+               x:Name="PasswordText"/>
+        
+        
+        <Button Text="Login"
+                BorderColor="Teal"
+                BorderWidth="2"
+                BackgroundColor="Teal"
+                TextColor="White"
+                Clicked="NavigateButton_OnClicked"></Button>
+        <Button Text="Forgot User ID or Password?"/>
+        
+    </StackLayout>
+</ContentPage>
