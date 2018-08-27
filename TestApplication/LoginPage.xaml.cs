@@ -14,10 +14,10 @@ namespace TestApplication
             InitializeComponent();
         }
 
-        void Handle_Clicked(object sender, System.EventArgs e)
-        {
-            DisplayAlert("Awesome Title", "Displaying awesome alert!", "Cancel");
-        }
+        //void Handle_Clicked(object sender, System.EventArgs e)
+        //{
+        //    DisplayAlert("Awesome Title", "Displaying awesome alert!", "Cancel");
+        //}
 
         private async void NavigateButton_OnClicked(object sender, EventArgs e)
         {
@@ -28,7 +28,7 @@ namespace TestApplication
 
             if(CheckCredentials(user))
             {
-                Navigation.InsertPageBefore(new MainPage(), this);
+                Navigation.InsertPageBefore(new MasterPage(), this);
                 await Navigation.PopAsync();
             }
             else {
@@ -40,10 +40,7 @@ namespace TestApplication
 
         bool CheckCredentials(User obj)
         {
-            if(obj.Username.Equals(Constants.UsernameHC) && obj.Password.Equals(Constants.PasswordHC)){
-                return true;
-            }
-            return false;
+            return obj.Username.Equals(Constants.UsernameHC) && obj.Password.Equals(Constants.PasswordHC);
         }
     }
 }
